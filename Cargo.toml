@@ -1,0 +1,20 @@
+
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Vulkan API
+ash = "0.38"
+
+# Window management
+winit = "0.30"
+
+# Vulkan window integration
+ash-window = "0.13"
+raw-window-handle = "0.6"
+
+# Error handling
+anyhow = "1.0"
+glam = "0.29"
