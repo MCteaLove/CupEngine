@@ -17,6 +17,7 @@ use winit::{
 // CONFIGURATION
 // ============================================================
 mod transform;
+mod rigid_body;
 const ENABLE_VALIDATION: bool = cfg!(debug_assertions);
 
 const VALIDATION_LAYER: &CStr = c"VK_LAYER_KHRONOS_validation";
@@ -343,23 +344,23 @@ impl ApplicationHandler for App {
 // MAIN
 // ============================================================
 
-fn main() -> Result<()> {
+
+fn main() -> anyhow::Result<()> {
+    use glam::{Quat, Vec3};
 
     println!("================================");
     println!("       CUSTOM RUST ENGINE       ");
     println!("================================");
 
-    use glam::{Quat, Vec3};
-
+    // Создаём корабль.
     let mut ship = transform::Transform::new();
 
     println!("Initial position: {:?}", ship.position);
     println!("Forward: {:?}", ship.forward());
 
-    // Перемещаем корабль вперёд.
+    // Проверяем Transform.
     ship.translate_local(Vec3::new(0.0, 0.0, -5.0));
 
-    // Поворачиваем на 90 градусов вокруг оси Y.
     ship.rotate_local(Quat::from_rotation_y(
         90.0_f32.to_radians()
     ));
@@ -367,6 +368,25 @@ fn main() -> Result<()> {
     println!("New position: {:?}", ship.position);
     println!("New forward: {:?}", ship.forward());
 
+    // Создаём физическое тело.
+    let mut physics = rigid_body::RigidBody::new(2.0);
+
+    // Прикладываем силу.
+    physics.apply_force(Vec3::new(0.0, 0.0, -10.0));
+
+    // Прикладываем вращающий момент.
+    physics.apply_torque(Vec3::new(0.0, 2.0, 0.0));
+
+    // Выполняем один шаг симуляции.
+    physics.update(&mut ship, 1.0 / 60.0);
+
+    println!("--- PHYSICS TEST ---");
+    println!("Position: {:?}", ship.position);
+    println!("Velocity: {:?}", physics.linear_velocity);
+    println!("Rotation: {:?}", ship.rotation);
+    println!("Angular velocity: {:?}", physics.angular_velocity);
+
+    // Только теперь запускаем оконный цикл.
     let event_loop = EventLoop::new()?;
 
     let mut app = App::new();
