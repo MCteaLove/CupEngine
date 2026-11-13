@@ -8,7 +8,7 @@ pub struct RigidBody {
     // Скорость перемещения в мировых координатах.
     pub linear_velocity: Vec3,
 
-    // Угловая скорость относительно локальных осей.
+
     pub angular_velocity: Vec3,
 
     // Сила, приложенная к объекту.
