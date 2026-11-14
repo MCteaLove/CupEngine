@@ -1,0 +1,631 @@
+{
+  "entities": [
+    {
+      "id": 1,
+      "name": "Directional Light",
+      "transform": {
+        "translation": [
+          1.4064078,
+          10.0,
+          0.0
+        ],
+        "rotation": [
+          -0.5615833,
+          0.22463332,
+          0.0,
+          0.7963442
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "parent": null,
+      "mesh": null,
+      "light": {
+        "color": [
+          0.88498974,
+          0.530994,
+          0.0
+        ],
+        "intensity": 1.0
+      },
+      "spin": null,
+      "emitter": null
+    },
+    {
+      "id": 2,
+      "name": "Floor",
+      "transform": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          20.0,
+          1.0,
+          20.0
+        ]
+      },
+      "parent": null,
+      "mesh": {
+        "kind": "Plane",
+        "color": [
+          0.22,
+          0.23999998,
+          0.28
+        ]
+      },
+      "light": null,
+      "spin": null,
+      "emitter": null
+    },
+    {
+      "id": 3,
+      "name": "Core",
+      "transform": {
+        "translation": [
+          0.0,
+          1.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      "parent": null,
+      "mesh": {
+        "kind": "Sphere",
+        "color": [
+          0.9,
+          0.9,
+          0.95
+        ]
+      },
+      "light": null,
+      "spin": null,
+      "emitter": {
+        "arms": 4,
+        "speed": 4.0,
+        "interval": 0.012,
+        "step": 0.31,
+        "bullet_radius": 0.18,
+        "color": [
+          1.0,
+          0.35000002,
+          0.5
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Cube Ring",
+      "transform": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "parent": null,
+      "mesh": null,
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          20.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 5,
+      "name": "Cube 0",
+      "transform": {
+        "translation": [
+          9.0,
+          0.75,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          1.0,
+          0.24757698,
+          0.25486952
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 6,
+      "name": "Cube 1",
+      "transform": {
+        "translation": [
+          7.7942286,
+          0.75,
+          4.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.9330127,
+          0.065592945,
+          0.5056046
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 7,
+      "name": "Cube 2",
+      "transform": {
+        "translation": [
+          4.4999995,
+          0.75,
+          7.794229
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.75,
+          0.000007867813,
+          0.754838
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 8,
+      "name": "Cube 3",
+      "transform": {
+        "translation": [
+          -3.934025e-7,
+          0.75,
+          9.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.49999997,
+          0.06839535,
+          0.9357879
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 9,
+      "name": "Cube 4",
+      "transform": {
+        "translation": [
+          -5.212638,
+          0.75,
+          8.9508705
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.25,
+          0.25243074,
+          0.9999686
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 10,
+      "name": "Cube 5",
+      "transform": {
+        "translation": [
+          -7.7942286,
+          0.75,
+          4.5000005
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.066987306,
+          0.5028024,
+          0.9301832
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 11,
+      "name": "Cube 6",
+      "transform": {
+        "translation": [
+          -9.0,
+          0.75,
+          -7.86805e-7
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.0,
+          0.7524229,
+          0.74513036
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 12,
+      "name": "Cube 7",
+      "transform": {
+        "translation": [
+          -7.7942286,
+          0.75,
+          -4.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.066987306,
+          0.934407,
+          0.4943952
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 13,
+      "name": "Cube 8",
+      "transform": {
+        "translation": [
+          -4.499999,
+          0.75,
+          -7.794229
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.25000006,
+          0.99999213,
+          0.24516186
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 14,
+      "name": "Cube 9",
+      "transform": {
+        "translation": [
+          1.0732393e-7,
+          0.75,
+          -9.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.5,
+          0.93160474,
+          0.06421214
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 15,
+      "name": "Cube 10",
+      "transform": {
+        "translation": [
+          4.499999,
+          0.75,
+          -7.794229
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.74999994,
+          0.7475692,
+          0.000031411648
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    },
+    {
+      "id": 16,
+      "name": "Cube 11",
+      "transform": {
+        "translation": [
+          7.79423,
+          0.75,
+          -4.499998
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      },
+      "parent": 4,
+      "mesh": {
+        "kind": "Cube",
+        "color": [
+          0.9330128,
+          0.49719748,
+          0.06981704
+        ]
+      },
+      "light": null,
+      "spin": {
+        "degrees_per_sec": [
+          0.0,
+          60.0,
+          0.0
+        ]
+      },
+      "emitter": null
+    }
+  ],
+  "next_id": 17
+}
